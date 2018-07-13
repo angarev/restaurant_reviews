@@ -41,13 +41,13 @@
 					onchange="updateRestaurants()">
 				<option role="option" value="all">All Neighborhoods</option>
 			</select>
-			<select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+			<select role="listbox" tabindex="0" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
 				<option role="option" value="all">All Cuisines</option>
 			</select>
 		</div>
 		<!-- Beginning filter -->
 		<!-- Beginning restaurants -->
-		<ul id="restaurants-list"></ul>
+		<ul id="restaurants-list" aria-owns="restaurantsGroup"></ul>
 		<!-- End restaurants -->
 	</section>
 </main>
